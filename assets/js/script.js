@@ -1,13 +1,13 @@
 let userPoints = 0
 let compPoints = 0
-const score = document.querySelector('.score-board') as HTMLDivElement
-const userScore = document.querySelector('#user-score') as HTMLSpanElement
-const compScore = document.querySelector('#computer-score') as HTMLSpanElement
-const result = document.querySelector('.result p') as HTMLParagraphElement
-const rock = document.querySelector('#rock') as HTMLDivElement
-const paper = document.querySelector('#paper') as HTMLDivElement
-const scissor = document.querySelector('#scissor') as HTMLDivElement
-const actionMsg = document.querySelector('#actionMsg') as HTMLParagraphElement
+const score = document.querySelector('.score-board')
+const userScore = document.querySelector('#user-score')
+const compScore = document.querySelector('#computer-score')
+const result = document.querySelector('.result p')
+const rock = document.querySelector('#rock')
+const paper = document.querySelector('#paper')
+const scissor = document.querySelector('#scissor')
+const actionMsg = document.querySelector('#actionMsg')
 
 const win = () => {
 	userPoints++
@@ -39,7 +39,7 @@ const main = () => {
 	})
 }
 
-const game = (userChoice: string) => {
+const game = (userChoice) => {
 	const computerChoice = getComputerChoice()
 
 	switch (userChoice + computerChoice) {
